@@ -1,0 +1,5 @@
+MaterialButton 1.0 MaterialButton.qml
+MaterialFrame 1.0 MaterialFrame.qml
+singleton MaterialIcons 1.0 MaterialIcons.qml
+singleton MaterialTheme 1.0 MaterialTheme.qml
+MaterialToolTip 1.0 MaterialToolTip.qml

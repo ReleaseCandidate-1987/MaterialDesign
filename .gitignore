@@ -1,0 +1,9 @@
+cmake-build-debug/
+.idea/
+assets/
+*.qtds
+*.qrc
+*.qmlproject
+MaterialIcons.qml
+main.qml
+qtquickcontrols2.conf
