@@ -18,6 +18,40 @@ MetaInfo{
     }
 
     Type {
+        name: "MaterialDesign.Controls.MaterialCheckBox"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialCheckBox"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialComboBox"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialComboBox"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
         name: "MaterialDesign.Controls.MaterialFrame"
 
         Hints {
@@ -62,6 +96,91 @@ MetaInfo{
 
         ItemLibraryEntry {
             name: "MaterialLabel"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialRadioButton"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialRadioButton"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialSpinBox"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialSpinBox"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialSwitch"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialSwitch"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialTextField"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialTextField"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialTitleLabel"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialTitleLabel"
             category: "MaterialDesign Controls"
             version: "1.0"
             requiredImport: "MaterialDesign.Controls"
