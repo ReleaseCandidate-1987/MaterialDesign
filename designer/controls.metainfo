@@ -33,4 +33,39 @@ MetaInfo{
             requiredImport: "MaterialDesign.Controls"
         }
     }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialIconLabel"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialIconLabel"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialLabel"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialLabel"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
 }
