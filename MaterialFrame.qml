@@ -24,7 +24,7 @@ Frame {
     enabled: visible
 
     Material.elevation: 4
-    Material.background: MaterialTheme.background
+    Material.background: MaterialTheme.backgroundAlt
 
     property int radius: 0
     property real backgroundOpacity: 0.85

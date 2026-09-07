@@ -91,7 +91,11 @@ int main(int argc, char *argv[]) {
     QString metaInfo = "MetaInfo{\n";
     // Metainfo-Blacklist
     const QStringList blackList = {
-        "MaterialIcons", "MaterialTheme", "MaterialToolTip"
+        "MaterialIcons",
+        "MaterialMenu",
+        "MaterialMenuItem",
+        "MaterialTheme",
+        "MaterialToolTip"
     };
 
     for ( const auto &entry: entryInfo ) {

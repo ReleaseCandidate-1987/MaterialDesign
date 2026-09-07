@@ -53,19 +53,20 @@ Button {
 
     icon.width: 18
     icon.height: 18
+    icon.color: control.Material.foreground
 
     font: MaterialTheme.controlFont
     opacity: enabled ? 1 : 0.5
 
     Material.roundedScale: Material.SmallScale
     Material.background: MaterialTheme.backgroundAlt
-    Material.foreground: MaterialTheme.foregroundHighlight
+    Material.foreground: checked ? MaterialTheme.accent : MaterialTheme.foreground
     Material.elevation: 0
 
     Behavior on opacity { NumberAnimation { duration: 200; easing.type: "InOutQuad" } }
     property bool borderVisible: true
     property color highlightBorderColor: MaterialTheme.foregroundMuted
-    property color highlightColor: Material.rippleColor
+    property color highlightColor: control.Material.rippleColor
     property int iconPadding: 8
     property alias toolTipPosition: materialToolTip.position
     property string toolTipText: ""
