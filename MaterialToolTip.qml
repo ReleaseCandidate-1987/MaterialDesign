@@ -1,15 +1,16 @@
 import QtQuick
 import QtQuick.Controls
 
-ToolTip {
-    enum Position {
-        PositionLeft,
-        PositionRight,
-        PositionTop,
-        PositionBottom
-    }
+/*!
+    MaterialToolTip-Komponente
 
-    property int position: MaterialToolTip.PositionLeft
+    Zeigt einen ToolTip an, der relativ zum zugehörigen Steuerelement
+    an einer frei wählbaren Seite positioniert werden kann.
+
+    properties:
+        - position: Legt die Position des ToolTips fest. Unterstützt PositionLeft, PositionRight, PositionTop und PositionBottom.
+*/
+ToolTip {
     enabled: control.enabled && control.visible && control.toolTipText.trim().length > 0
     visible: enabled && control.hovered
     text: control.toolTipText
@@ -28,6 +29,16 @@ ToolTip {
 
     delay: 500
     timeout: 2000
+
+    enum Position {
+        PositionLeft,
+        PositionRight,
+        PositionTop,
+        PositionBottom
+    }
+
+    property int position: MaterialToolTip.PositionLeft
+
     background: MaterialFrame {
         anchors.fill: parent
         radius: MaterialTheme.controlRadius

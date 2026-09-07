@@ -2,9 +2,24 @@ import QtQuick
 import QtQuick.Controls.Material
 import QtQuick.Controls.Material.impl
 
+/*!
+    MaterialButton-Komponente
+
+    Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen,
+    eigene Hervorhebungsfarben und einen integrierten ToolTip.
+
+    properties:
+        - borderVisible: Legt fest, ob der Rahmen angezeigt wird.
+        - highlightBorderColor: Legt die Rahmenfarbe beim Überfahren mit der Maus fest.
+        - highlightColor: Legt die Hervorhebungs- und Ripple-Farbe fest.
+        - iconPadding: Legt den Abstand zwischen Icon und Buttonrand fest.
+        - toolTipPosition: Legt die Position des ToolTips fest.
+        - toolTipText: Legt den angezeigten Text des ToolTips fest.
+*/
 Button {
     id: control
     text: qsTr("MaterialButton")
+
 
     implicitHeight: display === AbstractButton.TextUnderIcon
                     ? MaterialTheme.controlHeight + topPadding + bottomPadding + spacing :
@@ -12,9 +27,7 @@ Button {
 
     implicitWidth: display === AbstractButton.IconOnly
                    ? implicitHeight
-                   : hasText ? contentItem.implicitWidth + leftPadding + spacing + rightPadding : height
-
-    bottomInset: 0; topInset: 0; rightInset: 0; leftInset: 0
+                   : contentItem.implicitWidth + leftPadding + spacing + rightPadding
 
     rightPadding: display === AbstractButton.TextUnderIcon
                   || display === AbstractButton.IconOnly
@@ -36,24 +49,26 @@ Button {
                 || display === AbstractButton.IconOnly
                 ? iconPadding : 0
 
+    bottomInset: 0; topInset: 0; rightInset: 0; leftInset: 0
+
     icon.width: 18
     icon.height: 18
+
+    font: MaterialTheme.controlFont
+    opacity: enabled ? 1 : 0.5
+
     Material.roundedScale: Material.SmallScale
     Material.background: MaterialTheme.backgroundAlt
     Material.foreground: MaterialTheme.foregroundHighlight
-    font: MaterialTheme.controlFont
     Material.elevation: 0
-    opacity: enabled ? 1 : 0.5
 
     Behavior on opacity { NumberAnimation { duration: 200; easing.type: "InOutQuad" } }
-    property string toolTipText: ""
-    property bool hasText: text.trim().length > 0
     property bool borderVisible: true
-    property bool __hasIcon: hasIcon || hasIcon && (display === AbstractButton.TextUnderIcon || display === AbstractButton.TextUnderIcon)
     property color highlightBorderColor: MaterialTheme.foregroundMuted
     property color highlightColor: Material.rippleColor
     property int iconPadding: 8
     property alias toolTipPosition: materialToolTip.position
+    property string toolTipText: ""
 
     MaterialToolTip { id: materialToolTip  }
 

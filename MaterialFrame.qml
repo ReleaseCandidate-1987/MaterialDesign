@@ -2,6 +2,16 @@ import QtQuick
 import QtQuick.Controls.Material
 import QtQuick.Controls.Material.impl
 
+/*!
+    MaterialFrame-Komponente
+
+    Erweitert den standardmäßigen Frame um einen abgerundeten,
+    transparenten Hintergrund mit Material-Schatten.
+
+    properties:
+        - radius: Legt den Eckenradius des Hintergrunds fest.
+        - backgroundOpacity: Legt die Deckkraft des Hintergrunds fest.
+*/
 Frame {
     id: control
     bottomPadding: 0
@@ -14,7 +24,7 @@ Frame {
     enabled: visible
 
     Material.elevation: 4
-    Material.background: ColorPalette.background
+    Material.background: MaterialTheme.background
 
     property int radius: 0
     property real backgroundOpacity: 0.85
