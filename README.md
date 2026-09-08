@@ -245,6 +245,21 @@ Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Besc
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 
+### MaterialRoundedImage
+
+Stellt ein Bild mit abgerundeten Ecken und einem konfigurierbaren Rahmen dar.
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `radius` | `int` | Legt die Rundung der Bildecken fest. |
+| `borderColor` | `color` | Legt die Farbe des Rahmens fest. |
+| `borderWidth` | `int` | Legt die Breite des Rahmens fest. |
+| `padding` | `int` | Legt den Abstand zwischen Bild und Komponentenrand fest. |
+| `source` | `url` | Legt die Bildquelle fest. |
+| `cache` | `bool` | Legt fest, ob das Bild zwischengespeichert wird. |
+| `asynchronous` | `bool` | Legt fest, ob das Bild asynchron geladen wird. |
+| `fillMode` | `int` | Legt fest, wie das Bild innerhalb der verfügbaren Fläche dargestellt wird. |
+
 ### MaterialSlider
 
 Erweitert den standardmäßigen Slider um eine Überschrift und eine optionale Anzeige des aktuellen Wertes.
