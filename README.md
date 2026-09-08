@@ -198,6 +198,8 @@ Erweitert das standardmäßige Label um einen optionalen Hintergrund und einen k
 
 Stellt einen anklickbaren Link dar, der im Standardbrowser geöffnet wird.
 
+<img width="502" height="32" alt="grafik" src="https://github.com/user-attachments/assets/f636cc47-576e-4482-84f3-e7b01a6633ca" />
+
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `link` | `string` | Legt die anzuzeigende und zu öffnende Internetadresse fest. |
