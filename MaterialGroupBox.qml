@@ -1,9 +1,18 @@
 import QtQuick
 import QtQuick.Controls.Material
 import QtQuick.Controls.Material.impl
+
+/*!
+    MaterialGroupBox-Komponente
+
+    Stellt einen beschrifteten Container zum übersichtlichen Gruppieren zusammengehöriger Inhalte dar.
+
+    properties:
+        - borderVisible: Legt fest, ob der Rahmen angezeigt wird.
+        - radius: Legt die Rundung der Containerecken fest.
+*/
 GroupBox {
     id: control
-
     bottomPadding: 0
     leftPadding: 0
     rightPadding: 0
@@ -49,8 +58,6 @@ GroupBox {
             roundedScale: control.background.radius
         }
     }
-
-
 }
 
 
