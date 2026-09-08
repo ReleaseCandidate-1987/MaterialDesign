@@ -59,7 +59,11 @@ ColumnLayout {
         wrapMode: "WordWrap"
         backgroundVisible: false
         Layout.alignment: horizontalAlignment
+        Layout.fillWidth: true
         opacity: 0.75
     }
-
 }
+
+
+
+
