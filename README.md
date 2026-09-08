@@ -280,6 +280,9 @@ Erweitert den standardmäßigen Slider um eine Überschrift und eine optionale A
 
 Stellt eine numerische Eingabe im eigenen Material-Design mit einer optionalen Überschrift dar.
 
+<img width="114" height="49" alt="grafik" src="https://github.com/user-attachments/assets/865bb31f-3b4a-4819-a18c-f651fc9c6420" />
+
+
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `title` | `string` | Legt die oberhalb der SpinBox angezeigte Überschrift fest. |
