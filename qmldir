@@ -20,3 +20,4 @@ MaterialTextField 1.0 MaterialTextField.qml
 singleton MaterialTheme 1.0 MaterialTheme.qml
 MaterialTitleLabel 1.0 MaterialTitleLabel.qml
 MaterialToolTip 1.0 MaterialToolTip.qml
+MaterialTransparentBackground 1.0 MaterialTransparentBackground.qml

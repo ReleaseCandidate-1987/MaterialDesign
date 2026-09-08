@@ -272,4 +272,21 @@ MetaInfo{
         }
     }
 
+    Type {
+        name: "MaterialDesign.Controls.MaterialTransparentBackground"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialTransparentBackground"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
 }
