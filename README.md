@@ -110,6 +110,7 @@ Die folgenden Komponenten erweitern ausgewählte Qt Quick Controls um ein einhei
 Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- und Beschreibungstext dar.
 
 <img width="421" height="156" alt="grafik" src="https://github.com/user-attachments/assets/77fb76cd-68e0-4c6d-b12e-d8fe7fe4fb07" />
+<img width="429" height="161" alt="grafik" src="https://github.com/user-attachments/assets/103e7f68-4bb6-458e-bf1e-fdd44effcabe" />
 
 
 | Property | Typ | Beschreibung |
