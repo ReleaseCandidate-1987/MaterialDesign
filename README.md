@@ -249,6 +249,8 @@ Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Besc
 
 Stellt ein Bild mit abgerundeten Ecken und einem konfigurierbaren Rahmen dar.
 
+<img width="262" height="261" alt="grafik" src="https://github.com/user-attachments/assets/a73e44ec-40f9-4e6e-8b7e-bc300b9ccdac" />
+
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `radius` | `int` | Legt die Rundung der Bildecken fest. |
