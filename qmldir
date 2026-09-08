@@ -1,13 +1,17 @@
 MaterialButton 1.0 MaterialButton.qml
 MaterialCheckBox 1.0 MaterialCheckBox.qml
+MaterialColorImage 1.0 MaterialColorImage.qml
 MaterialComboBox 1.0 MaterialComboBox.qml
+MaterialFlatButton 1.0 MaterialFlatButton.qml
 MaterialFrame 1.0 MaterialFrame.qml
 MaterialIconLabel 1.0 MaterialIconLabel.qml
 singleton MaterialIcons 1.0 MaterialIcons.qml
 MaterialLabel 1.0 MaterialLabel.qml
 MaterialMenu 1.0 MaterialMenu.qml
 MaterialMenuItem 1.0 MaterialMenuItem.qml
+MaterialPopup 1.0 MaterialPopup.qml
 MaterialRadioButton 1.0 MaterialRadioButton.qml
+MaterialSlider 1.0 MaterialSlider.qml
 MaterialSpinBox 1.0 MaterialSpinBox.qml
 MaterialSwitch 1.0 MaterialSwitch.qml
 MaterialTextField 1.0 MaterialTextField.qml

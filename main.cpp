@@ -94,6 +94,7 @@ int main(int argc, char *argv[]) {
         "MaterialIcons",
         "MaterialMenu",
         "MaterialMenuItem",
+        "MaterialPopup",
         "MaterialTheme",
         "MaterialToolTip"
     };

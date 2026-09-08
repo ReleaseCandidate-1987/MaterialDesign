@@ -30,6 +30,10 @@ ToolTip {
     delay: 500
     timeout: 2000
 
+
+    Material.accent: MaterialTheme.accent
+    Material.foreground: MaterialTheme.foreground
+
     enum Position {
         PositionLeft,
         PositionRight,

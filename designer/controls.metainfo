@@ -35,6 +35,23 @@ MetaInfo{
     }
 
     Type {
+        name: "MaterialDesign.Controls.MaterialColorImage"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialColorImage"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
         name: "MaterialDesign.Controls.MaterialComboBox"
 
         Hints {
@@ -45,6 +62,23 @@ MetaInfo{
 
         ItemLibraryEntry {
             name: "MaterialComboBox"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialFlatButton"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialFlatButton"
             category: "MaterialDesign Controls"
             version: "1.0"
             requiredImport: "MaterialDesign.Controls"
@@ -113,6 +147,23 @@ MetaInfo{
 
         ItemLibraryEntry {
             name: "MaterialRadioButton"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialSlider"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialSlider"
             category: "MaterialDesign Controls"
             version: "1.0"
             requiredImport: "MaterialDesign.Controls"

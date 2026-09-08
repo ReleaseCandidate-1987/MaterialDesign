@@ -60,16 +60,18 @@ Button {
 
     Material.roundedScale: Material.SmallScale
     Material.background: MaterialTheme.backgroundAlt
+    Material.accent: MaterialTheme.accent
     Material.foreground: checked ? MaterialTheme.accent : MaterialTheme.foreground
     Material.elevation: 0
 
     Behavior on opacity { NumberAnimation { duration: 200; easing.type: "InOutQuad" } }
     property bool borderVisible: true
     property color highlightBorderColor: MaterialTheme.foregroundMuted
-    property color highlightColor: control.Material.rippleColor
+    property color highlightColor: checked ? MaterialTheme.rgba(MaterialTheme.accent, 0.05) : control.Material.rippleColor
     property int iconPadding: 8
     property alias toolTipPosition: materialToolTip.position
     property string toolTipText: ""
+    property int radius: MaterialTheme.controlRadius
 
     MaterialToolTip { id: materialToolTip  }
 
@@ -77,9 +79,11 @@ Button {
         implicitWidth: 64
         implicitHeight: control.Material.buttonHeight
 
-        radius: control.Material.roundedScale === Material.FullScale ? height / 2 : control.Material.roundedScale
-        color: enabled && control.checked ? control.highlightColor : control.Material.buttonColor(control.Material.MaterialTheme, control.Material.background,
-                                                                                                  control.Material.accent, control.enabled, control.flat, control.highlighted, control.checked)
+        radius: control.radius
+        color: enabled && control.checked ?
+                   control.highlightColor
+                 : control.Material.buttonColor(control.Material.MaterialTheme, control.Material.background,
+                                                control.Material.accent, control.enabled, control.flat, control.highlighted, control.checked)
         border.color: !control.borderVisible ? MaterialTheme.transparent : (enabled && control.checked)
                                                ? MaterialTheme.accent : (enabled && control.hovered)
                                                  ? control.highlightBorderColor : MaterialTheme.border
@@ -99,7 +103,7 @@ Button {
             pressed: control.pressed
             anchor: control
             active: enabled && (control.down || control.visualFocus || control.hovered)
-            color: control.flat && control.highlighted ? control.Material.highlightedRippleColor : control.highlightColor
+            color:  control.highlightColor
         }
     }
 }

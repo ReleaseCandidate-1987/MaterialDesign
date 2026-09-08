@@ -15,6 +15,9 @@ ComboBox {
     implicitWidth: 100
     font: MaterialTheme.controlFont
 
+    Material.accent: MaterialTheme.accent
+    Material.foreground: MaterialTheme.foreground
+
     delegate: MaterialMenuItem {
         required property var model
         required property int index

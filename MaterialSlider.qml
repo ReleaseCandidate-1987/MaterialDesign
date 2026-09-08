@@ -47,7 +47,5 @@ Slider {
             font.capitalization: "AllUppercase"
 
         }
-
     }
-
 }
