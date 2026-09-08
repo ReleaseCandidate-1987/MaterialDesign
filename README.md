@@ -137,6 +137,8 @@ Kombiniert eine CheckBox mit einem getrennt konfigurierbaren Titel- und Beschrei
 
 Stellt ein farblich anpassbares Bild mit optionalen Schatten-, Helligkeits- und Weichzeichnungseffekten dar.
 
+<img width="287" height="332" alt="grafik" src="https://github.com/user-attachments/assets/a752164c-f858-4a39-853f-7b3d0a26061d" />
+
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `source` | `url` | Legt die Bildquelle fest. |
