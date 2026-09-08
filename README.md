@@ -206,6 +206,22 @@ Stellt einen an das eigene Material-Design angepassten Eintrag für Menüs und A
 
 Die Komponente besitzt keine zusätzlichen Properties.
 
+### MaterialPopup
+
+Stellt ein Popup mit abgedunkeltem Hintergrund und anpassbarer Eckenrundung dar.
+
+#### Properties
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `radius` | `int` | Legt die Rundung der Popupecken fest. |
+
+#### Signale
+
+| Signal | Beschreibung |
+|---|---|
+| `accepted` | Wird ausgelöst, wenn der Inhalt des Popups bestätigt wurde. |
+
 ### MaterialRadioButton
 
 Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Beschreibungstext.
