@@ -26,7 +26,7 @@ Label {
     topPadding: backgroundVisible ? 8 : 0
     bottomPadding: backgroundVisible ? 8 : 0
 
-    property bool backgroundVisible: true
+    property bool backgroundVisible: false
     property color backgroundColor: MaterialTheme.backgroundAlt
     property int backgroundRadius: MaterialTheme.controlRadius
     property real backgroundOpacity: 1.0
