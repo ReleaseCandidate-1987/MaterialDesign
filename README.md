@@ -329,7 +329,17 @@ Stellt einen ToolTip bereit, der an einer festgelegten Seite der zugehörigen Ko
 |---|---|---|
 | `position` | `int` | Legt mit `PositionLeft`, `PositionRight`, `PositionTop` oder `PositionBottom` die Position des ToolTips fest. |
 
+### MaterialTransparentBackground
 
+Stellt einen karierten Hintergrund zur Kennzeichnung transparenter Flächen dar.
+
+<img width="320" height="324" alt="grafik" src="https://github.com/user-attachments/assets/5e8ed4a4-1b3b-416e-b13c-5e002043cc02" />
+
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `radius` | `int` | Legt die Rundung der Hintergrundecken fest. |
+| `tileSize` | `int` | Legt die Größe der einzelnen Kacheln fest. |
 
 
 
