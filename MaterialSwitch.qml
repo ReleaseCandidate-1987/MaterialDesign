@@ -28,7 +28,9 @@ Switch {
     implicitHeight: 42
     LayoutMirroring.enabled: true
     font: MaterialTheme.controlFont
-    Material.foreground: checked ? MaterialTheme.accent : MaterialTheme.foreground
+    Material.foreground: MaterialTheme.foreground
+    Material.background: MaterialTheme.background
+    Material.accent: MaterialTheme.accent
 
     property string title: "Title"
     property alias titleFont: __lbl.titleFont

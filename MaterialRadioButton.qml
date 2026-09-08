@@ -20,7 +20,7 @@ import QtQuick.Controls.Material
 RadioButton {
     id: control
     text: "Text"
-    implicitHeight: 42
+    implicitHeight: MaterialTheme.controlHeight
     bottomPadding: 0
     topPadding: 0
     rightPadding: 0
@@ -28,6 +28,8 @@ RadioButton {
     font: MaterialTheme.controlFont
     LayoutMirroring.enabled: true
     Material.foreground: MaterialTheme.foreground
+    Material.background: MaterialTheme.background
+    Material.accent: MaterialTheme.accent
     spacing: 16
 
     property string title: "Title"
@@ -51,6 +53,33 @@ RadioButton {
             font: control.font
             x: !control.mirrored ? control.indicator.width + control.spacing : 0
             y: (control.height - height) / 2
+        }
+    }
+
+    indicator: Item {
+        x: control.text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2
+        y: control.topPadding + (control.availableHeight - height) / 2
+        height: control.implicitHeight * 0.8
+        width: height
+        Rectangle {
+            width: parent.width * 0.6
+            height: parent.height * 0.6
+            anchors.centerIn: parent
+            radius: Math.max(width, height) / 2
+            color: control.Material.accent
+            scale: control.checked ? 1 : 0
+            opacity: control.checked ? 1 : 0
+            Behavior on scale { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+            Behavior on opacity { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+        }
+
+        Rectangle {
+            anchors.fill: parent
+            radius: Math.max(width, height) / 2
+            color: MaterialTheme.transparent
+            border.color: control.checked ? control.Material.accent : MaterialTheme.border
+            border.width: control.checked ? 2 : 1
+            Behavior on border.color { ColorAnimation { duration: 200; easing.type: Easing.InOutQuad } }
         }
     }
 

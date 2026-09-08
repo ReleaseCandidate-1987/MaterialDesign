@@ -120,6 +120,23 @@ MetaInfo{
     }
 
     Type {
+        name: "MaterialDesign.Controls.MaterialGroupBox"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialGroupBox"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
         name: "MaterialDesign.Controls.MaterialIconLabel"
 
         Hints {

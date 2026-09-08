@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls.Material
+import QtQuick.Controls.Material.impl
 
 /*!
     MaterialCheckBox-Komponente
@@ -25,11 +26,12 @@ CheckBox {
     topPadding: 0
     bottomPadding: 0
     spacing: 16
-    implicitHeight: 42
+    implicitHeight: MaterialTheme.controlHeight
     LayoutMirroring.enabled: true
     font: MaterialTheme.controlFont
-    Material.foreground: MaterialTheme.red
-    Material.primary: MaterialTheme.red
+    Material.foreground: MaterialTheme.foreground
+    Material.background: MaterialTheme.background
+    Material.accent: MaterialTheme.accent
 
     property string title: "Title"
     property alias titleFont: __lbl.titleFont
@@ -52,6 +54,41 @@ CheckBox {
             font: control.font
             x: !control.mirrored ? control.indicator.width + control.spacing : 0
             y: (control.height - height) / 2
+        }
+    }
+
+    indicator: Item {
+        x: control.text ? (control.mirrored ? control.width - width - control.rightPadding : control.leftPadding) : control.leftPadding + (control.availableWidth - width) / 2
+        y: control.topPadding + (control.availableHeight - height) / 2
+        height: control.implicitHeight * 0.8
+        width: height
+        Rectangle {
+            anchors.fill: parent
+            radius: MaterialTheme.controlRadius
+            color: control.Material.accent
+            scale: control.checked ? 1 : 0
+            opacity: control.checked ? 1 : 0
+            Behavior on scale { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+            Behavior on opacity { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+        }
+
+        Image {
+            width: parent.width * 0.6
+            height: parent.height * 0.6
+            anchors.centerIn: parent
+            fillMode: Image.PreserveAspectFit
+            source: "qrc:/qt-project.org/imports/QtQuick/Controls/Material/images/check.png"
+            scale: control.checked ? 1 : 0.8
+            opacity: control.checked ? 1 : 0
+            Behavior on scale { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+            Behavior on opacity { NumberAnimation { duration: 200; easing.type: Easing.InOutQuad } }
+        }
+
+        Rectangle {
+            anchors.fill: parent
+            radius: MaterialTheme.controlRadius
+            color: MaterialTheme.transparent
+            border.color: control.checked ? MaterialTheme.foreground : MaterialTheme.border
         }
     }
 }

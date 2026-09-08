@@ -5,6 +5,7 @@ MaterialColorImage 1.0 MaterialColorImage.qml
 MaterialComboBox 1.0 MaterialComboBox.qml
 MaterialFlatButton 1.0 MaterialFlatButton.qml
 MaterialFrame 1.0 MaterialFrame.qml
+MaterialGroupBox 1.0 MaterialGroupBox.qml
 MaterialIconLabel 1.0 MaterialIconLabel.qml
 singleton MaterialIcons 1.0 MaterialIcons.qml
 MaterialLabel 1.0 MaterialLabel.qml
