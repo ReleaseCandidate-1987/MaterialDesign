@@ -192,6 +192,14 @@ Erweitert das standardmäßige Label um einen optionalen Hintergrund und einen k
 | `borderColor` | `color` | Legt die Farbe des Rahmens fest. |
 | `borderWidth` | `int` | Legt die Breite des Rahmens fest. |
 
+### MaterialLinkLabel
+
+Stellt einen anklickbaren Link dar, der im Standardbrowser geöffnet wird.
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `link` | `string` | Legt die anzuzeigende und zu öffnende Internetadresse fest. |
+
 ### MaterialMenu
 
 Stellt ein Menü mit einem abgerundeten Material-Hintergrund und einheitlich gestalteten Menüeinträgen dar.
