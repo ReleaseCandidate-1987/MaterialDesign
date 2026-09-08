@@ -105,6 +105,36 @@ Der Platzhalter `D:/Pfad/zu/QML-Modulen` muss in allen Beispielen durch den tats
 
 Die folgenden Komponenten erweitern ausgewählte Qt Quick Controls um ein einheitliches Material-Design und zusätzliche Eigenschaften. Sie sind alphabetisch nach ihrem Komponentennamen sortiert.
 
+### MaterialAlert
+
+Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- und Beschreibungstext dar.
+
+<img width="421" height="156" alt="grafik" src="https://github.com/user-attachments/assets/77fb76cd-68e0-4c6d-b12e-d8fe7fe4fb07" />
+
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `spacing` | `int` | Legt den Abstand zwischen Titel und Beschreibungstext fest. |
+| `padding` | `int` | Legt den allgemeinen Innenabstand fest. |
+| `topPadding` | `int` | Legt den oberen Innenabstand fest. |
+| `leftPadding` | `int` | Legt den linken Innenabstand fest. |
+| `rightPadding` | `int` | Legt den rechten Innenabstand fest. |
+| `bottomPadding` | `int` | Legt den unteren Innenabstand fest. |
+| `color` | `color` | Legt die Farbe des Seitenindikators und des Titels fest. |
+| `backgroundColor` | `color` | Legt die Hintergrundfarbe fest. |
+| `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
+| `backgroundRadius` | `int` | Legt die Rundung der Hintergrundecken fest. |
+| `titleFont` | `font` | Legt die Schriftart des Titels fest. |
+| `titleColor` | `color` | Legt die Farbe des Titels fest. |
+| `titleVisible` | `bool` | Legt fest, ob der Titel angezeigt wird. |
+| `titleOpacity` | `real` | Legt die Deckkraft des Titels fest. |
+| `titleHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Titels fest. |
+| `font` | `font` | Legt die Schriftart des Beschreibungstextes fest. |
+| `textColor` | `color` | Legt die Farbe des Beschreibungstextes fest. |
+| `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
+| `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
+| `textHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Beschreibungstextes fest. |
+
 ### MaterialButton
 
 Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen, eigene Hervorhebungsfarben und einen integrierten ToolTip.
