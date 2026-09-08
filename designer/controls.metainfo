@@ -137,6 +137,23 @@ MetaInfo{
     }
 
     Type {
+        name: "MaterialDesign.Controls.MaterialLinkLabel"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialLinkLabel"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
         name: "MaterialDesign.Controls.MaterialRadioButton"
 
         Hints {
@@ -147,6 +164,23 @@ MetaInfo{
 
         ItemLibraryEntry {
             name: "MaterialRadioButton"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
+        name: "MaterialDesign.Controls.MaterialRoundedImage"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialRoundedImage"
             category: "MaterialDesign Controls"
             version: "1.0"
             requiredImport: "MaterialDesign.Controls"
