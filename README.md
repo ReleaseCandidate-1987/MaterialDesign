@@ -221,6 +221,16 @@ Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Besc
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 
+### MaterialSlider
+
+Erweitert den standardmäßigen Slider um eine Überschrift und eine optionale Anzeige des aktuellen Wertes.
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `title` | `string` | Legt die Überschrift des Sliders fest. |
+| `titleValue` | `int` | Stellt einen zusätzlichen ganzzahligen Wert für den Titelbereich bereit. |
+| `titleValueVisible` | `bool` | Legt fest, ob der aktuelle Slider-Wert angezeigt wird. |
+
 ### MaterialSpinBox
 
 Stellt eine numerische Eingabe im eigenen Material-Design mit einer optionalen Überschrift dar.
