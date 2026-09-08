@@ -140,6 +140,8 @@ Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- u
 
 Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen, eigene Hervorhebungsfarben und einen integrierten ToolTip.
 
+<img width="182" height="101" alt="grafik" src="https://github.com/user-attachments/assets/8654e64a-5c13-43a4-976f-2d5a326afebf" />
+
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
