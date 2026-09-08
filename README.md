@@ -206,6 +206,18 @@ Stellt einen Material-Rahmen mit anpassbarer Rundung und Hintergrunddeckkraft da
 | `radius` | `int` | Legt die Rundung der Ecken fest. |
 | `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
 
+### MaterialGroupBox
+
+Stellt einen beschrifteten Container zum übersichtlichen Gruppieren zusammengehöriger Inhalte dar.
+
+<img width="291" height="184" alt="grafik" src="https://github.com/user-attachments/assets/cfbfa590-13af-4c26-bd2e-4a8ab25706da" />
+
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
+| `radius` | `int` | Legt die Rundung der Containerecken fest. |
+
 ### MaterialIconLabel
 
 Kombiniert ein Icon mit einem Text und ermöglicht die Verwendung eines eigenen Hintergrundelementes.
