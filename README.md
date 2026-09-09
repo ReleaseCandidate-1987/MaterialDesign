@@ -124,14 +124,12 @@ Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- u
 | `color` | `color` | Legt die Farbe des Seitenindikators und des Titels fest. |
 | `backgroundColor` | `color` | Legt die Hintergrundfarbe fest. |
 | `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
-| `backgroundRadius` | `int` | Legt die Rundung der Hintergrundecken fest. |
+| `radius` | `int` | Legt die Rundung der Hintergrundecken fest. |
 | `titleFont` | `font` | Legt die Schriftart des Titels fest. |
-| `titleColor` | `color` | Legt die Farbe des Titels fest. |
 | `titleVisible` | `bool` | Legt fest, ob der Titel angezeigt wird. |
 | `titleOpacity` | `real` | Legt die Deckkraft des Titels fest. |
 | `titleHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Titels fest. |
 | `font` | `font` | Legt die Schriftart des Beschreibungstextes fest. |
-| `textColor` | `color` | Legt die Farbe des Beschreibungstextes fest. |
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 | `textHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Beschreibungstextes fest. |
@@ -215,6 +213,7 @@ Stellt einen beschrifteten Container zum übersichtlichen Gruppieren zusammengeh
 
 | Property | Typ | Beschreibung |
 |---|---|---|
+| `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
 | `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
 | `radius` | `int` | Legt die Rundung der Containerecken fest. |
 
@@ -346,6 +345,16 @@ Kombiniert einen Switch mit einem getrennt konfigurierbaren Titel- und Beschreib
 | `textColor` | `color` | Legt die Farbe des Beschreibungstextes fest. |
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
+
+### MaterialTextArea
+
+Stellt ein mehrzeiliges Texteingabefeld mit anpassbarem Hintergrund und Rahmen dar.
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
+| `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
+| `radius` | `int` | Legt die Rundung der Ecken fest. |
 
 ### MaterialTitleLabel
 
