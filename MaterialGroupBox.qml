@@ -8,6 +8,7 @@ import QtQuick.Controls.Material.impl
     Stellt einen beschrifteten Container zum übersichtlichen Gruppieren zusammengehöriger Inhalte dar.
 
     properties:
+        - backgroundOpacity: Legt die Deckkraft des Hintergrundes fest.
         - borderVisible: Legt fest, ob der Rahmen angezeigt wird.
         - radius: Legt die Rundung der Containerecken fest.
 */
@@ -22,12 +23,15 @@ GroupBox {
     topInset: metric.lineSpacing + 4 + spacing
     topPadding:  topInset
     Material.foreground: MaterialTheme.foreground
+    Material.background: MaterialTheme.backgroundAlt
+    Material.elevation: 8
 
     FontMetrics {
         id: metric
         font: control.font
     }
 
+    property real backgroundOpacity: 1
     property bool borderVisible: true
     property int radius: MaterialTheme.controlRadius
 
@@ -48,7 +52,7 @@ GroupBox {
 
         radius: control.radius
 
-        color: control.Material.elevation > 0 ? control.Material.backgroundColor : "transparent"
+        color: MaterialTheme.rgba(control.Material.backgroundColor, control.backgroundOpacity)
         border.color: MaterialTheme.border
         border.width: control.borderVisible ? 1 : 0
 

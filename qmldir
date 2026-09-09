@@ -18,6 +18,7 @@ MaterialRoundedImage 1.0 MaterialRoundedImage.qml
 MaterialSlider 1.0 MaterialSlider.qml
 MaterialSpinBox 1.0 MaterialSpinBox.qml
 MaterialSwitch 1.0 MaterialSwitch.qml
+MaterialTextArea 1.0 MaterialTextArea.qml
 MaterialTextField 1.0 MaterialTextField.qml
 singleton MaterialTheme 1.0 MaterialTheme.qml
 MaterialTitleLabel 1.0 MaterialTitleLabel.qml

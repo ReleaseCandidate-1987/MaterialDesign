@@ -273,6 +273,23 @@ MetaInfo{
     }
 
     Type {
+        name: "MaterialDesign.Controls.MaterialTextArea"
+
+        Hints {
+            visibleInLibrary: true
+            canBeDroppedInFormEditor: true
+            canBeDroppedInNavigator: true
+        }
+
+        ItemLibraryEntry {
+            name: "MaterialTextArea"
+            category: "MaterialDesign Controls"
+            version: "1.0"
+            requiredImport: "MaterialDesign.Controls"
+        }
+    }
+
+    Type {
         name: "MaterialDesign.Controls.MaterialTextField"
 
         Hints {

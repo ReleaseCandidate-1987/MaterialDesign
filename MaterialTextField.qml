@@ -11,6 +11,7 @@ TextField {
     Material.foreground: MaterialTheme.foreground
     topInset: __lbl.visible ? __lbl.implicitHeight + spacing : 0
     topPadding: topInset
+    selectionColor: MaterialTheme.accent
 
     property string title: ""
     property bool isValid: true
