@@ -136,7 +136,7 @@ Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- u
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 | `textHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Beschreibungstextes fest. |
 
---
+---
 
 ### MaterialButton
 
@@ -158,6 +158,8 @@ Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen, eigene 
 ### MaterialCheckBox
 
 Kombiniert eine CheckBox mit einem getrennt konfigurierbaren Titel- und Beschreibungstext.
+
+<img width="507" height="62" alt="grafik" src="https://github.com/user-attachments/assets/5ab9efb5-885c-41ee-914d-f442c494d757" />
 
 | Property | Typ | Beschreibung |
 |---|---|---|
