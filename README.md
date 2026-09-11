@@ -105,6 +105,8 @@ Der Platzhalter `D:/Pfad/zu/QML-Modulen` muss in allen Beispielen durch den tats
 
 Die folgenden Komponenten erweitern ausgewählte Qt Quick Controls um ein einheitliches Material-Design und zusätzliche Eigenschaften. Sie sind alphabetisch nach ihrem Komponentennamen sortiert.
 
+---
+
 ### MaterialAlert
 
 Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- und Beschreibungstext dar.
@@ -134,6 +136,8 @@ Stellt einen hervorgehobenen Hinweis mit farbigem Seitenindikator sowie Titel- u
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 | `textHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Beschreibungstextes fest. |
 
+--
+
 ### MaterialButton
 
 Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen, eigene Hervorhebungsfarben und einen integrierten ToolTip.
@@ -149,6 +153,8 @@ Erweitert den standardmäßigen Button um einen konfigurierbaren Rahmen, eigene 
 | `toolTipPosition` | `int` | Legt die Position des ToolTips fest. |
 | `toolTipText` | `string` | Legt den angezeigten Text des ToolTips fest. |
 
+---
+
 ### MaterialCheckBox
 
 Kombiniert eine CheckBox mit einem getrennt konfigurierbaren Titel- und Beschreibungstext.
@@ -163,6 +169,8 @@ Kombiniert eine CheckBox mit einem getrennt konfigurierbaren Titel- und Beschrei
 | `textColor` | `color` | Legt die Farbe des Beschreibungstextes fest. |
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
+
+---
 
 ### MaterialColorImage
 
@@ -189,11 +197,35 @@ Stellt ein farblich anpassbares Bild mit optionalen Schatten-, Helligkeits- und 
 | `shadowHorizontalOffset` | `real` | Legt die horizontale Verschiebung des Schattens fest. |
 | `shadowVerticalOffset` | `real` | Legt die vertikale Verschiebung des Schattens fest. |
 
+---
+
 ### MaterialComboBox
 
 Stellt eine ComboBox mit einem an das eigene Material-Design angepassten Auswahlmenü dar.
 
 Die Komponente besitzt keine zusätzlichen Properties.
+
+---
+
+### MaterialExpandContainer
+
+Stellt einen ein- und ausklappbaren Container mit Überschrift und frei definierbarem Inhalt dar.
+
+<img width="222" height="141" alt="grafik" src="https://github.com/user-attachments/assets/4e3caa6d-9c5a-40c3-9ac6-bd634e6f8809" />
+<img width="62" height="67" alt="grafik" src="https://github.com/user-attachments/assets/3a8a68a5-e25d-4a1e-b36b-862037a2f556" />
+
+
+| Property | Typ | Beschreibung |
+|---|---|---|
+| `isOpen` | `bool` | Legt fest, ob der Container geöffnet ist. |
+| `iconSource` | `url` | Legt die Bildquelle des Klappsymbols fest. |
+| `iconWidth` | `int` | Legt die Breite des Klappsymbols fest. |
+| `iconHeight` | `int` | Legt die Höhe des Klappsymbols fest. |
+| `title` | `string` | Legt die Überschrift des Containers fest. |
+| `fillWidth` | `bool` | Legt fest, ob die enthaltenen Elemente die verfügbare Breite ausfüllen. |
+| `contentItems` | `list<Item>` | Enthält die im Container angezeigten Elemente. |
+
+---
 
 ### MaterialFrame
 
@@ -203,6 +235,8 @@ Stellt einen Material-Rahmen mit anpassbarer Rundung und Hintergrunddeckkraft da
 |---|---|---|
 | `radius` | `int` | Legt die Rundung der Ecken fest. |
 | `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
+
+---
 
 ### MaterialGroupBox
 
@@ -217,6 +251,8 @@ Stellt einen beschrifteten Container zum übersichtlichen Gruppieren zusammengeh
 | `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
 | `radius` | `int` | Legt die Rundung der Containerecken fest. |
 
+---
+
 ### MaterialIconLabel
 
 Kombiniert ein Icon mit einem Text und ermöglicht die Verwendung eines eigenen Hintergrundelementes.
@@ -224,6 +260,8 @@ Kombiniert ein Icon mit einem Text und ermöglicht die Verwendung eines eigenen 
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `background` | `Item` | Legt das Hintergrundelement der Komponente fest. |
+
+---
 
 ### MaterialLabel
 
@@ -238,6 +276,8 @@ Erweitert das standardmäßige Label um einen optionalen Hintergrund und einen k
 | `borderColor` | `color` | Legt die Farbe des Rahmens fest. |
 | `borderWidth` | `int` | Legt die Breite des Rahmens fest. |
 
+---
+
 ### MaterialLinkLabel
 
 Stellt einen anklickbaren Link dar, der im Standardbrowser geöffnet wird.
@@ -248,6 +288,8 @@ Stellt einen anklickbaren Link dar, der im Standardbrowser geöffnet wird.
 |---|---|---|
 | `link` | `string` | Legt die anzuzeigende und zu öffnende Internetadresse fest. |
 
+---
+
 ### MaterialMenu
 
 Stellt ein Menü mit einem abgerundeten Material-Hintergrund und einheitlich gestalteten Menüeinträgen dar.
@@ -256,11 +298,15 @@ Stellt ein Menü mit einem abgerundeten Material-Hintergrund und einheitlich ges
 |---|---|---|
 | `radius` | `int` | Legt die Rundung der Menüecken fest. |
 
+---
+
 ### MaterialMenuItem
 
 Stellt einen an das eigene Material-Design angepassten Eintrag für Menüs und Auswahlfelder dar.
 
 Die Komponente besitzt keine zusätzlichen Properties.
+
+---
 
 ### MaterialPopup
 
@@ -278,6 +324,8 @@ Stellt ein Popup mit abgedunkeltem Hintergrund und anpassbarer Eckenrundung dar.
 |---|---|
 | `accepted` | Wird ausgelöst, wenn der Inhalt des Popups bestätigt wurde. |
 
+---
+
 ### MaterialRadioButton
 
 Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Beschreibungstext.
@@ -292,6 +340,8 @@ Kombiniert einen RadioButton mit einem getrennt konfigurierbaren Titel- und Besc
 | `textColor` | `color` | Legt die Farbe des Beschreibungstextes fest. |
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
+
+---
 
 ### MaterialRoundedImage
 
@@ -310,6 +360,8 @@ Stellt ein Bild mit abgerundeten Ecken und einem konfigurierbaren Rahmen dar.
 | `asynchronous` | `bool` | Legt fest, ob das Bild asynchron geladen wird. |
 | `fillMode` | `int` | Legt fest, wie das Bild innerhalb der verfügbaren Fläche dargestellt wird. |
 
+---
+
 ### MaterialSlider
 
 Erweitert den standardmäßigen Slider um eine Überschrift und eine optionale Anzeige des aktuellen Wertes.
@@ -319,6 +371,8 @@ Erweitert den standardmäßigen Slider um eine Überschrift und eine optionale A
 | `title` | `string` | Legt die Überschrift des Sliders fest. |
 | `titleValue` | `int` | Stellt einen zusätzlichen ganzzahligen Wert für den Titelbereich bereit. |
 | `titleValueVisible` | `bool` | Legt fest, ob der aktuelle Slider-Wert angezeigt wird. |
+
+---
 
 ### MaterialSpinBox
 
@@ -330,6 +384,8 @@ Stellt eine numerische Eingabe im eigenen Material-Design mit einer optionalen �
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `title` | `string` | Legt die oberhalb der SpinBox angezeigte Überschrift fest. |
+
+---
 
 ### MaterialSwitch
 
@@ -346,15 +402,23 @@ Kombiniert einen Switch mit einem getrennt konfigurierbaren Titel- und Beschreib
 | `textVisible` | `bool` | Legt fest, ob der Beschreibungstext angezeigt wird. |
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 
+---
+
 ### MaterialTextArea
 
 Stellt ein mehrzeiliges Texteingabefeld mit anpassbarem Hintergrund und Rahmen dar.
+
+<img width="331" height="261" alt="grafik" src="https://github.com/user-attachments/assets/86789951-22ac-4d6b-8bda-ded7db208f75" />
+<img width="330" height="260" alt="grafik" src="https://github.com/user-attachments/assets/78be9d28-ef1b-4d1c-845b-11d8c611717b" />
+
 
 | Property | Typ | Beschreibung |
 |---|---|---|
 | `backgroundOpacity` | `real` | Legt die Deckkraft des Hintergrundes fest. |
 | `borderVisible` | `bool` | Legt fest, ob der Rahmen angezeigt wird. |
 | `radius` | `int` | Legt die Rundung der Ecken fest. |
+
+---
 
 ### MaterialTitleLabel
 
@@ -375,6 +439,8 @@ Stellt einen Titel und einen darunterliegenden Beschreibungstext als gemeinsame 
 | `textOpacity` | `real` | Legt die Deckkraft des Beschreibungstextes fest. |
 | `textHorizontalAlignment` | `int` | Legt die horizontale Ausrichtung des Beschreibungstextes fest. |
 
+---
+
 ### MaterialToolTip
 
 Stellt einen ToolTip bereit, der an einer festgelegten Seite der zugehörigen Komponente angezeigt wird.
@@ -383,12 +449,13 @@ Stellt einen ToolTip bereit, der an einer festgelegten Seite der zugehörigen Ko
 |---|---|---|
 | `position` | `int` | Legt mit `PositionLeft`, `PositionRight`, `PositionTop` oder `PositionBottom` die Position des ToolTips fest. |
 
+---
+
 ### MaterialTransparentBackground
 
 Stellt einen karierten Hintergrund zur Kennzeichnung transparenter Flächen dar.
 
 <img width="320" height="324" alt="grafik" src="https://github.com/user-attachments/assets/5e8ed4a4-1b3b-416e-b13c-5e002043cc02" />
-
 
 | Property | Typ | Beschreibung |
 |---|---|---|
